@@ -23,7 +23,10 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('First app demo'),
+          title: Text('First App Demo'),
+          centerTitle: true,
+          backgroundColor: Colors.orange,
+          elevation: 0.0,
         ),
         body: Center(
             child: Container(
