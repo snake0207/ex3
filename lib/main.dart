@@ -1,3 +1,4 @@
+import 'package:css_colors/css_colors.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -25,11 +26,9 @@ class MyHomePage extends StatelessWidget {
           title: Text('First app demo'),
         ),
         body: Center(
-            child: Column(
-          children: const [
-            Text('Hello'),
-            Text('Hello'),
-          ],
+            child: Container(
+          color: CSSColors.hotPink,
+          child: Text('Hello'),
         )));
   }
 }
