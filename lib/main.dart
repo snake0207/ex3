@@ -1,4 +1,3 @@
-import 'package:css_colors/css_colors.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -22,21 +21,14 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amber[500],
       appBar: AppBar(
         title: Text('First App Demo'),
         centerTitle: true,
-        backgroundColor: Colors.orange,
+        backgroundColor: Colors.amber[700],
         elevation: 0.0,
       ),
-      body: Center(
-        child: Column(
-          //   mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('1'),
-            Text('2'),
-          ],
-        ),
-      ),
+      body: Center(),
     );
   }
 }
