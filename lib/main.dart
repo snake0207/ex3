@@ -22,16 +22,21 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('First App Demo'),
-          centerTitle: true,
-          backgroundColor: Colors.orange,
-          elevation: 0.0,
+      appBar: AppBar(
+        title: Text('First App Demo'),
+        centerTitle: true,
+        backgroundColor: Colors.orange,
+        elevation: 0.0,
+      ),
+      body: Center(
+        child: Column(
+          //   mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text('1'),
+            Text('2'),
+          ],
         ),
-        body: Center(
-            child: Container(
-          color: CSSColors.hotPink,
-          child: Text('Hello'),
-        )));
+      ),
+    );
   }
 }
